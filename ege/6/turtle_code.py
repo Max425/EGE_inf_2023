@@ -15,4 +15,5 @@ for x in range(-k, k):
     for y in range(-k, k):
         goto(x * k, y * k)
         dot(5)
+
 done()  # чтобы рисунок не закрывался
