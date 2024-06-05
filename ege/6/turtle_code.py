@@ -1,19 +1,19 @@
-from turtle import *
+import turtle
 
-tracer(0)  # чтобы сразу увидеть результат
-left(90)  # поворачиваем в начальное положение
+turtle.tracer(0)  # чтобы сразу увидеть результат
+turtle.left(90)  # поворачиваем в начальное положение
 
 # рисуем фигуру
 k = 40
 for i in range(7):
-    forward(10 * k)
-    right(120)
+    turtle.forward(10 * k)
+    turtle.right(120)
 
 # рисуем точки
-pu()
+turtle.penup()
 for x in range(-k, k):
     for y in range(-k, k):
-        goto(x * k, y * k)
-        dot(5)
+        turtle.goto(x * k, y * k)
+        turtle.dot(5)
 
-done()  # чтобы рисунок не закрывался
+turtle.done()  # чтобы рисунок не закрывался

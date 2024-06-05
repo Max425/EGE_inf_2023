@@ -1,4 +1,6 @@
-import turtle  # задание 15318
+# 14940 16317 13873
+
+import turtle
 
 turtle.tracer(0)  # чтобы сразу увидеть результат
 turtle.left(90)  # поворачиваем в начальное положение
@@ -12,7 +14,6 @@ for i in range(2):
     turtle.right(90)
 
 turtle.penup()
-
 turtle.forward(5 * k)
 turtle.right(90)
 turtle.forward(9 * k)
@@ -27,7 +28,7 @@ for i in range(2):
     turtle.right(90)
 
 # рисуем точки
-turtle.pu()
+turtle.penup()
 for x in range(-k, k):
     for y in range(-k, k):
         turtle.goto(x * k, y * k)
